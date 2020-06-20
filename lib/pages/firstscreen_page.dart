@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart'; // always import this to your script works
 import 'dart:async'; //to use Timer
 import 'package:animated_text_kit/animated_text_kit.dart'; // to use animatedtext, like ColorizeAnimatedTextKit, for more informations: https://pub.dev/packages/animated_text_kit
-import 'package:recipe/pages/loginscreen_page.dart'; // import this  to put in Navigator, to switch pages 
+import 'package:recipe/pages/loginscreen_page.dart';
+import 'package:recipe/widgets/backgroundlayout_widget.dart'; // import this  to put in Navigator, to switch pages 
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -37,14 +38,7 @@ class _FirstScreenState extends State<FirstScreen> with SingleTickerProviderStat
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body :  Container(        
-        decoration: BoxDecoration(  
-          gradient  : LinearGradient( //here come the back ground color for entire screen, 
-            begin     : Alignment.topRight, 
-            end       : Alignment.bottomLeft,
-            colors    : [Color(0xff8B4513),Color(0xffA0522D)],  //it can contain more colors
-          )
-        ),
+      body :  BackGroundLayout(
         child     :  Column(  //use this to put things on the screen follow columns scruture
           
           children: <Widget>[ //it will allow you to put a log of widgets follow columns structure
