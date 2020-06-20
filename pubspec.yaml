@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   animated_text_kit: ^2.2.0
+  validators: ^2.0.0+1 
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,7 +50,7 @@ flutter:
   assets:
     - assets/images/first.jpg
     - assets/images/scroll.png
-  #   - images/a_dot_ham.jpeg
+    - assets/images/login.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

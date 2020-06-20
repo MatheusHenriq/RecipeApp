@@ -53,13 +53,15 @@ class _FirstScreenState extends State<FirstScreen> with SingleTickerProviderStat
 
           SizedBox(
               child : ColorizeAnimatedTextKit(  //  
-                text : ['Recipes'], //here goes the text that will be on the screen
-                textStyle: TextStyle( //here you can personalize how your text will look like
+                text      : ['Recipes'], //here goes the text that will be on the screen
+                textStyle : TextStyle( //here you can personalize how your text will look like
                     fontSize: 50.0, 
                     fontWeight: FontWeight.w900,
                     fontFamily: "Cormorant Upright"
                 ),
-                colors : [Colors.green, Colors.blue]
+                colors    : [Colors.green, Colors.blue],
+                pause     : Duration(seconds : 2), //duration of colors 
+                speed     : Duration(milliseconds : 400)
               ),
           ),
           
