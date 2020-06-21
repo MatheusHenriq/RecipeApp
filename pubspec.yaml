@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   animated_text_kit: ^2.2.0
   validators: ^2.0.0+1 
+  persistent_bottom_nav_bar: any
 
 
   # The following adds the Cupertino Icons font to your application.

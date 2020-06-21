@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/pages/insideapp_page.dart';
+import 'package:recipe/pages/insideapp/insideapp_page.dart';
 import 'package:recipe/widgets/backgroundlayout_widget.dart';
 import 'package:recipe/widgets/mytextformfield_widget.dart';
 import 'package:validators/validators.dart' as validator;//

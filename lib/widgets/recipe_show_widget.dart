@@ -48,7 +48,7 @@ class _RecipeShowState extends State<RecipeShow> {
                         Text(
                           'Recipe Name',
                           style : TextStyle(
-                            fontSize: 24,
+                            fontSize: 16,
                             fontFamily: "Cormorant Upright",
                             fontWeight: FontWeight.w800,
                             color     : Colors.brown[400],
@@ -58,9 +58,9 @@ class _RecipeShowState extends State<RecipeShow> {
                         Text(
                           widget.recipeName,
                           style : TextStyle(
-                            fontSize: 16,
+                            fontSize: 24,
                             fontFamily: "Cormorant Upright",
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w600,
                             color     : Colors.black,
                           ),
                         ),
@@ -68,13 +68,13 @@ class _RecipeShowState extends State<RecipeShow> {
                     )
                   )
                 ],
-              ),
+              ),  
 
               ExpansionTile(
               title   : Text(
-                'LEARN ${widget.recipeName}',
+                'How to make "${widget.recipeName}" ?',
                 style : TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   fontFamily: "Cormorant Upright",
                   fontWeight: FontWeight.w400,
                   color     : Colors.blueAccent,
