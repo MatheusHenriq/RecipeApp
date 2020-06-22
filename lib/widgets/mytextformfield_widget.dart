@@ -7,7 +7,9 @@ class MyTextFormField extends StatelessWidget {
   final bool  isPassword ;
   final int length;
 
-  MyTextFormField({this.text,this.validator,this.isPassword=false,this.length});
+  final bool isEmail;
+
+  MyTextFormField({this.text,this.validator,this.isPassword=false,this.length,this.isEmail = true});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class MyTextFormField extends StatelessWidget {
         decoration  : InputDecoration(
           prefixIcon: isPassword ? Icon(Icons.https) : Icon(Icons.email),
           counterText : '',
-          hintText    : isPassword ? 'Password' : 'chefs@example.com',
+          hintText    : isPassword ? 'Password' : isEmail ? 'chefs@exemple.com' : "Chef's Name",
           hintStyle   : TextStyle(
             fontSize    : 24,
             fontFamily  : "Cormorant Upright",

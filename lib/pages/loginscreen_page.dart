@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe/pages/createaccount_page.dart';
 import 'package:recipe/pages/insideapp/insideapp_page.dart';
 import 'package:recipe/widgets/backgroundlayout_widget.dart';
 import 'package:recipe/widgets/mytextformfield_widget.dart';
@@ -41,6 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           validator: (value){
                             if(value.isEmpty) return 'Insert your e-mail.';
                             if(!validator.isEmail(value)) return 'This e-mail is not valid.';
+                            return null;
                           },
                         ),
 
@@ -52,6 +54,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             if(value.isEmpty) return 'Insert your password.';
                             if(value.length<7) return 'Very short password.';
                             if(value.length>16) return 'Very large password.';
+
+                            return null;
                           },
                         ),
                       ],
@@ -106,7 +110,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
 
                       MaterialButton(
-                        onPressed : (){},
+                        onPressed : (){
+                          Navigator.push(context,MaterialPageRoute(builder: (context) => CreateAccount()));
+                        },
                         child     : Text(
                         'Create Account',
                           style: TextStyle(

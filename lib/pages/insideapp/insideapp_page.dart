@@ -4,9 +4,7 @@ import 'package:recipe/pages/insideapp/favorites_page_insideapp.dart';
 import 'package:recipe/pages/insideapp/home_page_insideapp.dart';
 import 'package:recipe/pages/insideapp/profile_page_insideapp.dart';
 import 'package:recipe/pages/insideapp/search_page_insideapp.dart';
-
 import 'package:recipe/widgets/backgroundlayout_widget.dart';
-import 'package:recipe/widgets/recipe_show_widget.dart';
 
 
 class InsideAPP extends StatefulWidget {

@@ -10,6 +10,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.brown[400],
+        onPressed:(){},
+        child: Icon(Icons.add),
+      ),
       body : ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
